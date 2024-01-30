@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: blueviolet;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(84, 35, 129);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(138, 138, 216);
+            font-size: 1.01rem;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(178, 119, 234);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 30%;
+
+        }
+
+        .leftsection {
+            font-size: 2rem;
+        }
+
+        .rightsection img {
+            width: 100%;
+            height: 100%;
+            justify-content: space-around;
+            border-radius: 40%;
+            border: 100%;
+        }
+
+        .purple {
+            color: rgb(250, 242, 4);
+        }
+
+        .text-gray {
+            color: rgb(52, 49, 49);
+        }
+
+        #element {
+            color: rgb(250, 242, 4);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 77vw;
+            height: 1px;
+            margin: 50px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 85px;
+            width: 2px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 27px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-desc {
+            font-size: 19px;
+            position: relative;
+            color: rgb(38, 25, 25);
+            top: 86px;
+            width: 150px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 18px;
+        }
+
+        .leftsection .buttons {
+            padding: 50px 0px;
+        }
+
+        .leftsection .btn {
+            background: rgb(76, 16, 132);
+            color: white;
+            padding: 12px;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .text-blue {
+            color: rgb(52, 49, 49);
+        }
+
+        .thirdsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 150vh;
+        }
+
+        .vertical-about {
+            font-size: 19px;
+            position: relative;
+            color: rgb(38, 25, 25);
+            top: 86px;
+            width: 150px;
+        }
+
+        .vertical-top {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 18px;
+        }
+
+        .thirdsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-pink {
+            color: rgb(52, 49, 49);
+            text-align: center;
+            padding: 0 70px;
+        }
+
+        .thirdsection .box {
+            background: white;
+            width: 100vw;
+            height: 1px;
+            margin: 50px 0;
+            display: flex;
+        }
+
+        .thirdsection .vertical {
+            height: 85px;
+            width: 1px;
+            background-color: white;
+            margin: 0 175px;
+        }
+
+        .vertical-info {
+            font-size: 19px;
+            position: relative;
+            color: rgb(38, 25, 25);
+            top: 86px;
+            width: 150px;
+        }
+
+        .vertical-up {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 18px;
+        }
+
+        .fourthsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .fourthsection .box {
+            background: white;
+            width: 77vw;
+            height: 1px;
+            margin: 50px 73px;
+            display: flex;
+        }
+
+        .fourthsection .vertical {
+            height: 85px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .fourthsection h1 {
+            font-size: 1.9rem;
+            padding: 0 70px;
+        }
+
+        .image-html {
+            width: 220px;
+            position: relative;
+            top: 140px;
+            left: -55px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Arwa's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, I am <span class="purple"> Arwa Bistan</span>
+
+                <div>And I am a passionate</div>
+                <span id="element"></span>
+                <!-- <div class="buttons">
+                    <element onclick="myScript"></element>
+                    <a href="https://docs.google.com/document/d/1DFCg1wOwCQIh3iQ728FOUBn6MBURBW1J/edit?usp=sharing&ouid=106416921996382320707&rtpof=true&sd=true"></a>
+                    <button class="btn">Download Resume</button> -->
+                   
+                </div>
+            </div>
+            <div class="rightsection">
+                <!-- <img src="arwa.jpeg" alt=""> -->
+            </div>
+        </section>
+
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far
+
+            </span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html css.jpeg" alt="">
+                    <div class="vertical-title">
+                        HTML CSS Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Recently I have completed one month
+                        internship in cipherbyte in HTML and CSS. And i am certified in HTML and CSS.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="javascript.png" alt="">
+                    <div class="vertical-title">
+                        JavaScript Developer (2023)
+                    </div>
+                    <div class="vertical-desc">
+                        I have learn JavaScript from online. And made many projects in JavaScript. Like Todo List and a
+                        basic clock in it.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="node js.png" alt="">
+                    <div class="vertical-title">
+                        Node.js Developer (2023)
+                    </div>
+                    <div class="vertical-desc">
+                        I have learn node.js from online and than made projects in it. A GYM website using of express
+                        and pug in it.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="thirdsection">
+            <span class="text-blue">What I have do.
+
+            </span>
+            <h1>Projects</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html css.jpeg" alt="">
+                    <div class="vertical-top">
+                        HTML CSS Projects (2022-2023)
+
+                    </div>
+                    <div class="vertical-about">
+                        <span>Portfolio project</span>
+                        In this project basic portfolio are made.
+                        <span>Landing page</span>
+                        In this Project basic travelling page are made in it.
+                    </div>
+                    <img class="image-html" src="Portfolio.png" alt="">
+                    <img class="image-html" src="landing.png" alt="">
+
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="javascript.png" alt="">
+                    <div class="vertical-title">
+                        JavaScript Projects (2023)
+                    </div>
+                    <div class="vertical-desc">
+                        <span>Clock</span>
+                        Basic Clock design.
+                        <span>TODOs List</span>
+                        A Todo list
+                    </div>
+                    <img class="image-html" src="Spotify.png" alt="">
+                    <img class="image-html" src="temperature converter.png" alt="">
+                    <img class="image-html" src="clock.png" alt="">
+                    <img class="image-html" src="todo.png" alt="">
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="node js.png" alt="">
+                    <div class="vertical-title">
+                        Node.js Developer (2023)
+                    </div>
+                    <div class="vertical-desc">
+                        <span>GYM Webiste</span>
+                        Making gym website using express.
+                        <span>Dancing Website</span>
+                        Making dance website using express.
+                    </div>
+                    <img class="image-html" src="GYM (1).png" alt="">
+                    <!-- <img class="image-html" src="landing.png" alt=""> -->
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="fourthsection">
+            <span class="text-pink">What I have do.
+
+            </span>
+            <h1>Study till now</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <!-- <img class="image-top" src="html css.jpeg" alt=""> -->
+                    <div class="vertical-up">
+                        Graduation
+                        <span>(2020-2024)</span>
+                    </div>
+                    <div class="vertical-info">
+                        I am pursing B.Tech in Computer Science From Sushila devi bansal college of engineering i got
+                        7.9 cgpa in 6th sem.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <!-- <img class="image-top" src="javascript.png" alt=""> -->
+                    <div class="vertical-up">
+                        12th Class
+                        <span>(2019-2020)</span>
+                    </div>
+                    <div class="vertical-info">
+                        I have passed 12th from badri higher secondary school with 75% in MP Board.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <!-- <img class="image-top" src="node js.png" alt=""> -->
+                    <div class="vertical-up">
+                        10th Class
+                        <span>(2017-2018)</span>
+                    </div>
+                    <div class="vertical-info">
+                        I have passed 10th from Badri higher secondary school with 85% in MP Board.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Mehndi Designer.', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
